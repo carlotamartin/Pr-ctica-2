@@ -4,6 +4,8 @@ import os
 import random
 import re
 import sys
+import numpy as np
+
 #
 # Complete the 'simpleArraySum' function below.
 #
@@ -19,3 +21,9 @@ def simpleArraySum(ar):
         result = simpleArraySum(ar)
         fptr.write(str(result) + '\n')
         fptr.close()
+    return np.sum(ar)
+
+#Probamos la funcion
+b = np.array([[ 1,  2],[ 3,  4],[ 5,  6],[ 7,  8],[ 9, 10],[11, 12]])
+
+print(simpleArraySum(b))
