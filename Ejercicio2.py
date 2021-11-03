@@ -16,6 +16,6 @@ def compareTriplets(a, b):
     return resultado
 
 #Probamos el método
-a = (45, 50,99)
+a = (45, 50,98)
 b= (95,50,99)
 print (compareTriplets(a,b))
