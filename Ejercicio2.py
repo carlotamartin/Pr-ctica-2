@@ -6,9 +6,9 @@ def compareTriplets(a, b):
     for i in a:
         for j in b:
             if i>j:
-                resultado[0]+=1
+                resultado[0]==1
             elif i<j:
-                resultado[1]+=1
+                resultado[1]==1
     return resultado
 #Probamos el método
 a = (45, 50,99)
