@@ -15,11 +15,11 @@ import numpy as np
 def simpleArraySum(ar):
     suma = np.sum(ar)
     # Write your code here
-    return print("La suma de todos los elementos del array es: "+ suma)
+    return print("La suma de todos los elementos del array es: "+ str(suma))
 #Probamos la funcion
 b = np.array([[ 1,  2],[ 3,  4],[ 5,  6],[ 7,  8],[ 9, 10],[11, 12]])
 
-print(simpleArraySum(b))
+simpleArraySum(b)
 
 '''
 if __name__ == '__main__':
