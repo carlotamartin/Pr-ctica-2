@@ -13,9 +13,9 @@ import numpy as np
 # The function accepts INTEGER_ARRAY ar as parameter.
 #
 def simpleArraySum(ar):
+    suma = np.sum(ar)
     # Write your code here
-    return np.sum(ar)
-
+    return print("La suma de todos los elementos del array es: "+ suma)
 #Probamos la funcion
 b = np.array([[ 1,  2],[ 3,  4],[ 5,  6],[ 7,  8],[ 9, 10],[11, 12]])
 
