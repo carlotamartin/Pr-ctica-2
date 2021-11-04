@@ -1,8 +1,13 @@
 def staircase(n):
+    asteriscos = 1
     # Write your code here
-    for num_asterictos in range(0,n):
-        for i in range (0, num_asterictos):
-            print('*')
-        print(' ')
+    for espacios in range(n, 0, -1):
+        for i in range (espacios):
+            print(' ', end='')
+        for j in range(asteriscos):
+            print('*', end='')
+        print()
+        asteriscos+=2
+
 
 staircase(7)
