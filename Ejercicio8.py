@@ -35,6 +35,14 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     print('La cantidad de manzanas que caen en la casa de Sam son: '+resultado_manzanas)
     print('La cantidad de naranjas que caen en la casa de Sam son: '+resultado_naranjas)
 
+def posicion_fruta (s, t, pos_arbol, pos_fruta):
+    resultado = 0
+    posicion= pos_arbol+pos_fruta
+    if posicion>s and posicion<t:
+        resultado +=1
+    else:
+        resultado= 0
+    return resultado
 
 
 
@@ -46,11 +54,3 @@ manzanas = [-2, 2, 1]
 naranjas= [5,-6]
 
 
-def posicion_fruta (s, t, pos_arbol, pos_fruta):
-    resultado = 0
-    posicion= pos_arbol+pos_fruta
-    if posicion>s and posicion<t:
-        resultado +=1
-    else:
-        resultado= 0
-    return resultado
