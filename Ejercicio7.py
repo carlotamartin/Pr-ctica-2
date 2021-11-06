@@ -6,7 +6,7 @@ def gradingStudents(grades):
             print ('Estudiante '+ str(num_estudiante) + ' recibió '+ str(i)+ ' una califiación por debajo de 40, por lo que la calificación no se modificará y la calificación final del estudiante es '+ str(i))
         if i>=40:
             multiplo = i % 5
-            num_mult = (i+ multiplo)-1
+            num_mult = (i- multiplo)+5
             resta = num_mult-i
             if resta<3:
                 #num_final = i+ multiplo
