@@ -3,7 +3,7 @@ def gameOfStones(n):
     puntos_P1 = 0
     puntos_P2=0
 
-    #Empieza 
+    #Empieza
     if puntos_P1>puntos_P2:
         ganador = puntos_P1
     else:
