@@ -1,20 +1,3 @@
-#EJERCICIO: COMPARA LOS PROBLEMAS
-# a y b son dos arrays que tienen cada uno tres elementos en el interior
-'''def compareTriplets(a, b):
-    resultado_a = 0
-    resultado_b = 0
-    #Inicializamos un bucle que recorra las dos listas y las podamos comparar
-    for i in a:
-        for j in b:
-            if i>j:
-                resultado_a +=1
-                #resultado.insert(0, resultado_a )
-            elif i<j:
-                resultado_b += 1
-                #resultado.insert(1, resultado_b)
-    resultado = [resultado_a, resultado_b]
-    return resultado
-'''
 def compareTriplets(a, b):
     #Inicializamos las variables de resultado a 0.
     resultado_a = 0
