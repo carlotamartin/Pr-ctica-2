@@ -14,7 +14,7 @@ def compareTriplets(a, b):
         elif item < b[indice]:
             resultado_b+=1
     resultado = [resultado_a, resultado_b]
-    return print(resultado)
+    return print('El resultado es:' + str(resultado))
 
 #Probamos el método
 a = (45, 50,98)
