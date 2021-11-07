@@ -1,34 +1,32 @@
 def gameOfStones(n):
-    #Inicializamos las variables de las punturaciones de cada jugador a 0
-    puntos_P1 = 0
-    puntos_P2=0
-
-    #Empieza
-    if puntos_P1>puntos_P2:
-        ganador = puntos_P1
-    else:
-        ganador = puntos_P2
-
-    return ganador
-
-def mostrar_ganador(n, inicia_juego, segundo_juego):
+    if n<1 and n>7:
+        n%=7
+    inicia_juego = 'P1'
+    segundo_juego='P2'
     if n == 1:
         print(inicia_juego + 'no puede hacer ningun movimiento y pierde el juego.')
+        print('P1 gana')
     elif n==2:
         n= n-2
         print(inicia_juego + 'elimina piedras del tablero de juego y gana el juego.')
+        print('P1 gana')
+
     elif n==3:
         n=n-2
         print (inicia_juego + ' elimina piedras en su primer movimiento, dejando piedra en el tablero y ganando el juego.')
+        print('P1 gana')
     elif n==4:
         n=n-3
         print (inicia_juego + ' elimina piedras en su primer movimiento, dejando piedra en el tablero y ganando el juego.')
+        print('P1 gana')
     elif n==5:
         n= n-5
         print(inicia_juego + ' elimina piedras del tablero de juego y gana el juego.')
+        print('P1 gana')
     elif n==6:
         n=n-6
         print (inicia_juego + ' elimina piedras en su primer movimiento, dejando piedra en el tablero y ganando el juego.')
+        print('P1 gana')
     elif n==7:
         '''
         Existen tres opciones pero en todas va a ganar segundo_juego
@@ -41,3 +39,6 @@ def mostrar_ganador(n, inicia_juego, segundo_juego):
         print(inicia_juego+' elimina dos piedras, dejando '+ n+ ' en el tablero.')
         n=n-5
         print(segundo_juego+ ' luego quita las piedras, ganando el juego.')
+        print('P2 gana')
+
+gameOfStones(5)
