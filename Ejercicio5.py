@@ -34,9 +34,9 @@ def gameOfStones(n):
         Eliminar 5 piedras, dejando3 piedras en el tablero.P2 luego quita el piedras restantes y gana el juego.
         '''
         n=n-2
-        print(inicia_juego+' elimina dos piedras, dejando '+ n+ ' en el tablero.')
+        print(inicia_juego+' elimina dos piedras, dejando '+ str(n)+ ' en el tablero.')
         n=n-5
         print(segundo_juego+ ' luego quita las piedras, ganando el juego.')
         print('P2 gana')
 
-gameOfStones(9)
+gameOfStones(7)
