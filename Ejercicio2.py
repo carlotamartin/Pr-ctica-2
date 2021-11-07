@@ -1,5 +1,4 @@
 
-
 def compareTriplets(a,b):
     #Inicializamos las variables de resultado a 0.
     resultado_a = 0
