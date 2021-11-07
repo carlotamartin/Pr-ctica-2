@@ -2,7 +2,7 @@
 import numpy as np
 '''
 El ejercicio es el mismo que el ejercicio1.py pero en
-este caso si python ve que es una variable de tipo
+este python ve que es una variable de tipo
 long en vez de una variable de tipo integer
 '''
 def aVeryBigSum(ar):
