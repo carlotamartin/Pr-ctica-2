@@ -1,4 +1,6 @@
 def gameOfStones(n):
+    if n<1 or n>7:
+        print ('No se puede jugar al juego')
     inicia_juego = 'P1'
     segundo_juego='P2'
     if n == 1:
@@ -39,4 +41,4 @@ def gameOfStones(n):
         print(segundo_juego+ ' luego quita las piedras, ganando el juego.')
         print('P2 gana')
 
-gameOfStones(7)
+gameOfStones(9)
